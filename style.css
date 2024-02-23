@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+navbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* main secttion */
+.main {
+    background: url(copy.jpg)no-repeat;
+    background-size: cover;
+
+
+    width: 100%;
+    height: 100vh;
+}
+
+.main h3 {
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+.main .bt1 {
+    height: 55px;
+    width: 138px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main .bt1:hover {
+    background-color: rgb(132, 5, 5);
+    transition: 0.5s;
+}
+
+.main .bt2 {
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color: red;
+    outline: none;
+    border: 1px solid red;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main .bt2:hover {
+    background-color: rgb(132, 5, 5);
+    transition: 0.5s;
+    color: white;
+}
+
+.about img {
+    -webkit-box-shadow: 10px 6px 24px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 6px 24px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 6px 24px -10px rgba(0, 0, 0, 0.75);
+    width: 30vw;
+}
+
+@media(max-width:500px) {
+    .about img{
+        width: 100%;
+    }
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.progress {
+    background-color: rgb(145, 142, 142);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+
+    -webkit-box-shadow: inset 12px 32px 62px -4px rgba(140,140,140,1);
+-moz-box-shadow: inset 12px 32px 62px -4px rgba(140,140,140,1);
+box-shadow: inset 12px 32px 62px -4px rgba(140,140,140,1);
+}
+
+.pro-value1 {
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value2 {
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value3 {
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value4 {
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.progress p {
+    color: white;
+    padding: 6px;
+}
+
+@keyframes load1 {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 83%;
+    }
+}
+
+@keyframes load3 {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 59%;
+    }
+}
+
+@keyframes load4 {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 88%;
+    }
+}
+
+.btn1 {
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+
+}
+
+.btn2 {
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 4px;
+
+}
+
+.btn2:hover {
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 0.5s;
+
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(145, 144, 144);
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.link{
+    color: black;
+}
+.circle:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+.link:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.contact .btn3{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 4px;
+}
+.btn3:hover{
+    background: white;
+    color: black;
+    transition: 0.4s;
+    border: 1px solid black;
+}
+footer{
+    background-color: black;
+    color: lightgray;
+}
+
+/* page 2 */
+.main2 {
+    background-color: rgb(172, 231, 231);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.main2 h3 {
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+.bum {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bum:hover {
+    color: white;
+    background-color: black;
+}

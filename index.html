@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+<!--     
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+navbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* main secttion */
+.main {
+    background: url(copy.jpg)no-repeat;
+    background-size: cover;
+
+
+    width: 100%;
+    height: 100vh;
+}
+
+.main h3 {
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+.main .bt1 {
+    height: 55px;
+    width: 138px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main .bt1:hover {
+    background-color: rgb(132, 5, 5);
+    transition: 0.5s;
+}
+
+.main .bt2 {
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color: red;
+    outline: none;
+    border: 1px solid red;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main .bt2:hover {
+    background-color: rgb(132, 5, 5);
+    transition: 0.5s;
+    color: white;
+}
+
+.about img {
+    -webkit-box-shadow: 10px 6px 24px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 6px 24px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 6px 24px -10px rgba(0, 0, 0, 0.75);
+    width: 30vw;
+}
+
+@media(max-width:500px) {
+    .about img{
+        width: 100%;
+    }
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.progress {
+    background-color: rgb(145, 142, 142);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+
+    -webkit-box-shadow: inset 12px 32px 62px -4px rgba(140,140,140,1);
+-moz-box-shadow: inset 12px 32px 62px -4px rgba(140,140,140,1);
+box-shadow: inset 12px 32px 62px -4px rgba(140,140,140,1);
+}
+
+.pro-value1 {
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value2 {
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value3 {
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value4 {
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.progress p {
+    color: white;
+    padding: 6px;
+}
+
+@keyframes load1 {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 83%;
+    }
+}
+
+@keyframes load3 {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 59%;
+    }
+}
+
+@keyframes load4 {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 88%;
+    }
+}
+
+.btn1 {
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+
+}
+
+.btn2 {
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 4px;
+
+}
+
+.btn2:hover {
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 0.5s;
+
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(145, 144, 144);
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.link{
+    color: black;
+}
+.circle:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+.link:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.contact .btn3{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 4px;
+}
+.btn3:hover{
+    background: white;
+    color: black;
+    transition: 0.4s;
+    border: 1px solid black;
+}
+footer{
+    background-color: black;
+    color: lightgray;
+}
+
+/* page 2 */
+.main2 {
+    background-color: rgb(172, 231, 231);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.main2 h3 {
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+.bum {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bum:hover {
+    color: white;
+    background-color: black;
+}
+    </style> 
+-->
+
+
+</head>
+
+
+<body>
+
+
+    <!--Navbar tag-->
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <span>
+                <img width="40px" class="rounded-circle me-2" src="logo.jpg" alt="">
+                <a class="navbar-brand fw-bold" href="#">Technical Services</a>
+            </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link  rounded" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link rounded" target="_blank" href="page2.html">About me</a>
+                    </li>
+                    <li class="nav-item dropdown px-lg-3">
+                        <a class="nav-link dropdown-toggle rounded" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu px-lg-3">
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://www.facebook.com/divyanshu.rawat.3766952/">Facebook</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://www.instagram.com/divyanshu_rwt456/">Instagram</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://www.linkedin.com/in/divyanshu-rawat-689901262/">Linkdin</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-lg-3">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal"
+                        data-bs-target="#signinModal">sign in</button>
+                    <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">sign up</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Get an Logo Account.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="form row">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control bg-light mb-3" placeholder="First name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control bg-light mb-3" placeholder="Last name">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Email address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword5" class="form-label">Password</label>
+                        <input type="password" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock" placeholder="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cinputPassword5" class="form-label">Confirm Password</label>
+                        <input type="password" id="cinputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock" placeholder="Confirm password">
+                    </div>
+                    
+
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn mx-4 btn-primary mb-3">Create Account</button>
+                  </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login Account.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Email address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword5" class="form-label">Password</label>
+                        <input type="password" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock" placeholder="password">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn mx-4 btn-primary mb-3">Login</button>
+                  </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Main section start-->
+
+    <section class="main py-5">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-6 py-5">
+                    <h3><small>Hello, I'm</small> <br>
+                        Divyanshu Rawat
+                    </h3 class="pt-3">
+                    <h6>PRO WEB DEVELOPER</h6>
+                    <a href="page2.html" target="_blank"><input type="button" value="My work" class="bt1 mt-5 mr-3"></a>
+                    <a href="page2.html" target="_blank"><input type="button" value="Hore Me" class="bt2 mt-5"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about py-5 text-dark">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 pt-3">
+                    <img class="img-fluid" data-aos="fade-right" data-aos-duration="1100" src="man.jpg" alt="img-fluid">
+                </div>
+                <div data-aos="fade-down" data-aos-duration="1100" class="col-lg-6 pt-2">
+                    <h1>About Me.</h1>
+                    <p class="text-secondary">WEB DEVELOPER & SOFTWARE DEVELOPER</p>
+                    <P class="py-3">I am <span class="fw-bold">Divyanshu Rawat</span>, I am from Kotdwara, Uttrakhand. I
+                        am currently pursuing BCA in the stream of Computer Engineering at Dev Bhoomi Uttrakhand
+                        University. I completed my schooling at SGRR Public school with 69%. I know programming language
+                        like C, Python, HTML. And coming to my technical skills, I know Very Large-scale Scale
+                        Integration.</P>
+
+                    <div class="progress">
+                        <div class="pro-value1">
+                            <p>HTML / CSS <span class="text-white float-end">95%</span></p>
+                        </div>
+                    </div>
+                    <div class="progress my-4">
+                        <div class="pro-value2">
+                            <p>BOOTSTRAP<span class="text-white float-end">88%</span></p>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="pro-value3">
+                            <p>JAVASCRIPT <span class="text-white float-end">59%</span></p>
+                        </div>
+                    </div>
+                    <div class="progress my-4">
+                        <div class="pro-value4">
+                            <p>C LANGUAGE<span class="text-white float-end">87%</span></p>
+                        </div>
+                    </div>
+
+                    <a href="page3.html" target="_blank"><input data-aos="zoom-in-up" data-aos-duration="2000"
+                            type="button" id="btn1" class="btn1 mt-5" value="Project3"></a>
+                    <a href="page4.html" target="_blank"><input data-aos="zoom-in-up" data-aos-duration="2000"
+                            type="button" id="btn2" class="btn2 mt-5" value="project 4"></a>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog bg-light py-5">
+        <div class="container">
+            <h1 class="text-center py-3">Learn languages</h1>
+            <div class="row py-2">
+                <div data-aos="fade-right" class="col-lg-4 mb-3">
+                    <div class="card">
+                        <iframe height="250" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=XNJLAc9ShFNdjpBt"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <small class="px-3 py-3 fw-bold">HTML basic</small>
+                        <h5 class="fw-bold px-3">Best video to learn html language. I hope this video is useful for you.
+                        </h5>
+                        <a href="https://www.w3schools.com/html/" target="_blank" class="fw-bold px-3 pb-4"> <u>Read
+                                more.</u></a>
+                    </div>
+                </div>
+                <div data-aos="fade-down" class="col-lg-4 mb-3">
+                    <div class="card">
+                        <iframe height="250" src="https://www.youtube.com/embed/Edsxf_NBFrw?si=6cC-Yu8V-g94sXDt"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <small class="px-3 py-3 fw-bold">CSS basic</small>
+                        <h5 class="fw-bold px-3">Best video to learn CSS language. I hope this video is useful for you.
+                        </h5>
+                        <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="fw-bold px-3 pb-4">
+                            <u>Read more.</u></a>
+                    </div>
+                </div>
+                <div data-aos="fade-down" class="col-lg-4 mb-3">
+                    <div class="card">
+                        <iframe height="250" src="https://www.youtube.com/embed/vpAJ0s5S2t0?si=ReGGqTRNvx_P2_s6"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <small class="px-3 py-3 fw-bold">Bootstrap basic</small>
+                        <h5 class="fw-bold px-3">Best video to learn Bootstrap language. I hope this video is useful for
+                            you.</h5>
+                        <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" target="_blank"
+                            class="fw-bold px-3 pb-4"> <u>Read more.</u></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="blog bg-light">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <iframe data-aos="fade-right" height="250"
+                            src="https://www.youtube.com/embed/hKB-YGF14SY?si=8t0cMV6-A9GxbetS"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <small class="px-3 py-3 fw-bold">JavaScript basic</small>
+                        <h5 class="fw-bold px-3">Best video to learn JavaScript language. I hope this video is useful
+                            for you.</h5>
+                        <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="fw-bold px-3 pb-4">
+                            <u>Read more.</u></a>
+                    </div>
+                </div>
+                <div data-aos="fade-down" class="col-lg-4 mb-3">
+                    <div class="card">
+                        <iframe height="250" src="https://www.youtube.com/embed/hlGoQC332VM?si=PoSe57O9q0qaPZ1K"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <small class="px-3 py-3 fw-bold">JQuery basic</small>
+                        <h5 class="fw-bold px-3">Best video to learn JQuery language. I hope this video is useful for
+                            you.</h5>
+                        <a href="https://www.w3schools.com/jquery/default.asp" target="_blank"
+                            class="fw-bold px-3 pb-4"> <u>Read more.</u></a>
+                    </div>
+                </div>
+                <div data-aos="fade-down" class="col-lg-4 mb-3">
+                    <div class="card">
+                        <iframe height="250" src="https://www.youtube.com/embed/Edsxf_NBFrw?si=6cC-Yu8V-g94sXDt"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <small class="px-3 py-3 fw-bold">HTML basic</small>
+                        <h5 class="fw-bold px-3">Best video to learn html language. I hope this video is useful for you.
+                        </h5>
+                        <a href="https://www.w3schools.com/html/" target="_blank" class="fw-bold px-3 pb-4"> <u>Read
+                                more.</u></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-5">
+        <div class="container py-5">
+            <h1 class="text-center">Contact Us.</h1>
+            <div class="row py-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row text-center">
+
+                        <div class="col-lg-4">
+                            <div class="circle">
+                                <span><a class="link" href="https://maps.app.goo.gl/UZxb3q8XjvzDgg47A"
+                                        target="_blank"><i class="fa-solid fa-address-book"></i></a>
+                                </span>
+                            </div>
+                            <h5>Address</h5>
+                            <p>duruvpur,Kotdwara, Uttrakhand</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="circle">
+                                <span><a class="link" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i
+                                            class="fa-regular fa-envelope"></i></a></span>
+                            </div>
+                            <h5>Email</h5>
+                            <p>rdivyansh36@gmail.com</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="circle">
+                                <span><i class="fa-solid fa-phone"></i></span>
+                            </div>
+                            <h5>Phone</h5>
+                            <p>7451991074</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row bg-secondary pt-3">
+                <div class="col-lg-9 mx-auto">
+                    <form action="">
+                        <div class="form row">
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control bg-light mb-3" placeholder="First name">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control bg-light mb-3" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-12">
+                                <textarea name="" id="" class="form-control bg-light" placeholder="Message" cols="30"
+                                    rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-check fw-bold">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio"> like
+                            </label>
+                        </div>
+                        <div class="form-check fw-bold">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio"> dislike
+                            </label>
+                        </div>
+                        <div class="form-check fw-bold">
+                            <label class="form-check-label fw-bold">
+                                <input type="checkbox" class="form-check-input" value=""> term and condition
+                            </label>
+                        </div>
+                        <button class="btn3 my-4">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer class="py-3 text-center">
+        <p>Copy Right 2020 By proWeb All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
